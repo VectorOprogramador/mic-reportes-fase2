@@ -19,6 +19,7 @@ import lombok.NoArgsConstructor;
 @Table(name="reportes")
 
 
+/*-- */
 /* Este código define una entidad JPA llamada
  "Reportes" que mapea a una tabla de base de datos, con campos para id, mensaje y fecha,
   usando Lombok para reducir código boilerplate. */
@@ -29,7 +30,7 @@ public class Reportes {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-     @Column(length = 1000, nullable = false)
+    @Column(length = 1000, nullable = false)
     private String mensajeReporte;
 
     @Column(nullable = false)
