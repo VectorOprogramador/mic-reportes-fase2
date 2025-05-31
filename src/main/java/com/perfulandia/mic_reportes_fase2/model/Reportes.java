@@ -30,6 +30,13 @@ public class Reportes {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
+    /*1 para ventas y 2 para inventario y 3 para usuarios, */
+    @Column(nullable = false)
+    private String id_areaReporte;
+
+    @Column(nullable = false)
+    private String id_usuario;
+
     @Column(length = 1000, nullable = false)
     private String mensajeReporte;
 
