@@ -29,7 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Utiliza {@code @WebMvcTest} para enfocar las pruebas en la capa web
  * y {@code @MockBean} para simular el servicio de reportes.
  */
-@WebMvcTest(ReportesController.class) // Anotación para probar el controlador en un contexto MVC
+@WebMvcTest(ReportesController.class) 
 class ReportesControllerTest {
 
     @Autowired
